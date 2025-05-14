@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* line 1, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 14, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top-back {
+  background-color: #2d2d2d;
+}
+
+/* line 17, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.conteiner {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* line 21, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top {
+  display: flex;
+  gap: 80px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+/* line 26, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-logo {
+  gap: 21px;
+  display: flex;
+}
+
+/* line 29, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-logo div:last-child {
+  padding-top: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  line-height: 23px;
+  text-align: center;
+}
+
+/* line 39, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress {
+  display: flex;
+  gap: 44px;
+}
+
+/* line 42, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:first-child {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+
+/* line 50, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:first-child span {
+  padding-top: 9px;
+  margin-right: 18px;
+}
+
+/* line 54, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:first-child img {
+  margin-right: 10px;
+}
+
+/* line 59, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:nth-child(2) .header-button {
+  margin-top: 10px;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #FFBF1D;
+  padding: 8px 27px;
+}
+
+/* line 69, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:nth-child(3) {
+  display: flex;
+}
+
+/* line 71, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:nth-child(3) img {
+  width: 21px;
+  height: 21px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 12px;
+}
+
+/* line 78, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:nth-child(3) div {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+/*# sourceMappingURL=header.css.map */
