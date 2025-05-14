@@ -22,7 +22,7 @@ button {
 }
 
 /* line 17, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
-.conteiner {
+.container {
   margin: 0 auto;
   width: 1200px;
 }
@@ -76,27 +76,32 @@ button {
 }
 
 /* line 54, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:first-child address {
+  font-style: normal;
+}
+
+/* line 57, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-top .h-adress div:first-child img {
   margin-right: 10px;
 }
 
-/* line 59, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 62, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-top .h-adress div:nth-child(2) .header-button {
   margin-top: 10px;
   font-family: PT Sans;
   font-weight: 700;
   font-size: 18px;
   color: white;
-  border: 1px solid #FFBF1D;
+  border: 1px solid #ffbf1d;
   padding: 8px 27px;
 }
 
-/* line 69, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 72, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-top .h-adress div:nth-child(3) {
   display: flex;
 }
 
-/* line 71, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 74, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-top .h-adress div:nth-child(3) img {
   width: 21px;
   height: 21px;
@@ -105,13 +110,14 @@ button {
   margin-right: 12px;
 }
 
-/* line 78, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
-.header-top .h-adress div:nth-child(3) div {
+/* line 82, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-top .h-adress div:nth-child(3) div a {
+  display: block;
+  text-decoration: none;
   color: white;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 18px;
-  color: white;
 }
 
 /*# sourceMappingURL=header.css.map */
