@@ -120,4 +120,82 @@ button {
   font-size: 18px;
 }
 
+/* line 94, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot-back {
+  background-color: #f3f3f3;
+}
+
+/* line 97, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 103, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav #burger {
+  display: none;
+  width: 30px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* line 111, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav #burger span {
+  display: block;
+  height: 4px;
+  background: black;
+  border-radius: 25px;
+  margin-bottom: 4px;
+}
+
+/* line 119, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+/* line 124, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* line 134, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot div {
+  position: relative;
+}
+
+/* line 136, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot div input {
+  height: 30px;
+  width: 270px;
+}
+
+/* line 140, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot div img {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+@media all and (max-width: 1250px) {
+  /* line 148, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-bot nav ul {
+    display: none;
+  }
+  /* line 151, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-bot nav #burger {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=header.css.map */
