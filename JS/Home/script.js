@@ -1,2 +1,2 @@
-import { headerBurger } from "../Header/header";
-headerBurger()
+import { headerBurger } from "../Header/header.js";
+headerBurger();

@@ -126,6 +126,21 @@ button {
 }
 
 /* line 97, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.burger-active span:nth-child(1) {
+  transform: rotate(40deg) translate(6px, 10px);
+}
+
+/* line 101, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.burger-active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 105, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.burger-active span:nth-child(3) {
+  transform: rotate(315deg) translate(2px, -4px);
+}
+
+/* line 108, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot {
   display: flex;
   justify-content: space-between;
@@ -133,7 +148,7 @@ button {
   padding-bottom: 25px;
 }
 
-/* line 103, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 114, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot nav #burger {
   display: none;
   width: 30px;
@@ -144,7 +159,7 @@ button {
   z-index: 10;
 }
 
-/* line 111, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 122, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot nav #burger span {
   display: block;
   height: 4px;
@@ -153,14 +168,46 @@ button {
   margin-bottom: 4px;
 }
 
-/* line 119, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 130, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav .nav-active {
+  display: block;
+  position: absolute;
+  background-color: #efeae5;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+/* line 137, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav .nav-active li {
+  margin-bottom: 8px;
+}
+
+/* line 140, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav .nav-active span {
+  display: block;
+  position: absolute;
+  top: -15px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #efeae5;
+}
+
+/* line 151, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot nav ul {
   display: flex;
   gap: 30px;
   list-style-type: none;
 }
 
-/* line 124, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 155, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.header-bot nav ul span {
+  display: none;
+}
+
+/* line 159, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot nav ul li a {
   text-decoration: none;
   color: black;
@@ -169,18 +216,18 @@ button {
   font-size: 18px;
 }
 
-/* line 134, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 169, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot div {
   position: relative;
 }
 
-/* line 136, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 171, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot div input {
   height: 30px;
   width: 270px;
 }
 
-/* line 140, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+/* line 175, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
 .header-bot div img {
   position: absolute;
   right: 10px;
@@ -188,13 +235,14 @@ button {
 }
 
 @media all and (max-width: 1250px) {
-  /* line 148, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  /* line 183, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
   .header-bot nav ul {
     display: none;
   }
-  /* line 151, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  /* line 186, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
   .header-bot nav #burger {
     display: block;
+    position: relative;
   }
 }
 
