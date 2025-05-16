@@ -1,0 +1,77 @@
+.rentAnyTasks-main-1 {
+  background-image: url("../../img/rentMain.jpg");
+  background-size: cover;
+}
+.fonRentAnyTasks {
+  background-image: url("../../img/fonRentMain.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  padding-top: 103px;
+  padding-bottom: 163px;
+  .container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    span {
+      display: block;
+      width: 264px;
+      border: 2px solid #fcb427;
+    }
+    h3 {
+      font-family: PT Sans;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 144%;
+    }
+    p {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 156%;
+    }
+    div {
+      button:nth-child(1) {
+        background-color: #fcb427;
+        padding: 12px 46px;
+        color: white;
+        font-family: PT Sans;
+        font-weight: 600;
+        font-size: 18px;
+        margin-right: 26px;
+      }
+      button:nth-child(2) {
+        color: black;
+        font-family: PT Sans;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 11px 44px;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .fonRentAnyTasks {
+    background-size: 68% 100%;
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .fonRentAnyTasks {
+    padding-top: 41px;
+    padding-bottom: 54px;
+    background-size: 100% 100%;
+    br {
+        display: none;
+    }
+  }
+  div button:nth-child(1){
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
