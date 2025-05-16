@@ -234,15 +234,76 @@ button {
   top: 7px;
 }
 
+/* line 182, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.search-result-item {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 189, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+.search-result-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* line 193, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+#search-results {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
 @media all and (max-width: 1250px) {
-  /* line 183, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  /* line 203, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
   .header-bot nav ul {
     display: none;
   }
-  /* line 186, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  /* line 206, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
   .header-bot nav #burger {
     display: block;
     position: relative;
+  }
+  /* line 210, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .container {
+    width: 740px;
+  }
+  /* line 213, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-top {
+    justify-content: space-between;
+  }
+  /* line 216, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-top .h-adress div:nth-child(1) {
+    display: none;
+  }
+  /* line 219, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-top .h-adress .header-button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 755px) {
+  /* line 224, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .container {
+    width: 300px;
+  }
+  /* line 227, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-top {
+    flex-direction: column;
+    gap: 25px;
+  }
+  /* line 231, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-top .h-logo div:last-child {
+    text-align: left;
+  }
+  /* line 234, ../../../OneDrive/Рабочий стол/GraduationProject/SCSS/Header/header.scss */
+  .header-bot div input {
+    height: 30px;
+    width: 130px;
   }
 }
 
