@@ -20,8 +20,8 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 
- scrollbar: {
-    el: '.swiper-scrollbar',
+  scrollbar: {
+    el: ".swiper-scrollbar",
     draggable: true,
   },
 
@@ -30,5 +30,34 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+const swiper2 = new Swiper(".swiper2", {
+  modules: [Navigation, Pagination, Scrollbar],
+  // Настройки слайдера
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  spaceBetween: 20, // отступ между слайдами
+  freeMode: true,
+  // Пагинация
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+  breakpoints: {
+    1570: {
+      slidesPerView: 7,
+      spaceBetween: 30,
+    },
+  },
+  // Навигационные кнопки
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

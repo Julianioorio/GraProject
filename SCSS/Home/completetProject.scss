@@ -1,0 +1,43 @@
+.completetProject {
+  .swiper2 {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    .swiper-wrapper {
+      margin-top: 58px;
+      margin-bottom: 50px;
+      display: flex;
+      width: max-content;
+    }
+    .custom-controls {
+      position: relative;
+      .swiper-button-next {
+        position: absolute;
+        background: none;
+        color: transparent;
+        top: -23px;
+        right: 306px;
+        img {
+          width: 80px;
+          height: 65px;
+        }
+      }
+      .swiper-button-prev {
+        position: absolute;
+        background: none;
+        color: transparent;
+        left: 1472px;
+        top: -20px;
+        img {
+          width: 80px;
+          height: 65px;
+        }
+      }
+    }
+    .swiper-scrollbar {
+      position: relative;
+      margin-bottom: 84px;
+    }
+  }
+}
