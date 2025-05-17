@@ -30,6 +30,17 @@
         font-weight: 400;
         margin-bottom: 32px;
       }
+      button {
+        background-color: #fcb427;
+        padding: 12px 24px;
+        font-family: PT Sans;
+        font-weight: 700;
+        font-size: 18px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
     .swiper-button-prev {
       background-image: url("../../img/SpPrev.png");
@@ -57,4 +68,56 @@
       }
     }
   }
+}
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .swiper {
+    width: 100%;
+    max-height: 600px;
+  }
+  .swiper-slide {
+    button {
+      margin-bottom: 130px;
+    }
+  }
+  .special-equipment-main-2 {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .special-equipment-main-2 .container .custom-controls .swiper-button-prev {
+    background: none;
+    color: transparent;
+    left: 607px;
+    top: -55px;
+  }
+  .special-equipment-main-2 .container .custom-controls .swiper-button-next {
+    background: none;
+    color: transparent;
+    top: -59px;
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .special-equipment-main-2 .container .spTitleImg h3 {
+    text-align: center;
+    font-size: 26px;
+    font-family: PT Sans;
+    font-weight: 700;
+  }
+  .spTitleImg {
+    img {
+      width: 100%;
+    }
+  }
+      .special-equipment-main-2 .container .custom-controls .swiper-button-prev {
+        background: none;
+        color: transparent;
+        left: 171px;
+        top: -55px;
+    }
 }
