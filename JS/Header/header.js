@@ -1,5 +1,5 @@
 // Функция бургера в Headere
-function headerBurger() {
+export function headerBurger() {
   try {
     const burger = document.getElementById("burger");
     if (!burger) {
@@ -19,13 +19,15 @@ function headerBurger() {
     console.error("Ошибка в работе бургер-меню:", error.message);
   }
 }
+
 const searchItems = [
   { name: "Гусеничный кран Liebherr LR 1750", link: "#" },
   { name: "Гусеничный кран Liebherr LR 1760", link: "#" },
   { name: "Гусеничный кран Liebherr LR 1770", link: "#" },
 ];
+
 // Функция поиска в Headere
-function headerSearch() {
+export function headerSearch() {
   try {
     const search = document.getElementById("search");
     const searchResultsContainer = document.getElementById("search-results");
@@ -53,9 +55,10 @@ function headerSearch() {
           resultItem.textContent = item.name;
 
           resultItem.addEventListener("click", function (e) {
-            search.value = ""; 
+            search.value = "";
             searchResultsContainer.style.display = "none";
           });
+
           searchResultsContainer.appendChild(resultItem);
         });
         searchResultsContainer.style.display = "block";
@@ -76,4 +79,3 @@ function headerSearch() {
     console.error("Ошибка в работе поиска:", error.message);
   }
 }
-export { headerBurger, headerSearch };
