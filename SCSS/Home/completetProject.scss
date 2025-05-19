@@ -1,4 +1,5 @@
 .completetProject {
+  padding-bottom: 51px;
   .swiper2 {
     position: relative;
     max-width: 1920px;
@@ -18,6 +19,11 @@
         color: transparent;
         top: -23px;
         right: 306px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
         img {
           width: 80px;
           height: 65px;
@@ -27,8 +33,13 @@
         position: absolute;
         background: none;
         color: transparent;
-        left: 1472px;
+        left: 1446px;
         top: -20px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
         img {
           width: 80px;
           height: 65px;
@@ -38,6 +49,179 @@
     .swiper-scrollbar {
       position: relative;
       margin-bottom: 84px;
+    }
+  }
+  .contentComProject {
+    display: flex;
+    gap: 39px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .contentComProject > div + div {
+    h3 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+    div {
+      display: flex;
+      margin-bottom: 40px;
+      img {
+        margin-right: 10px;
+      }
+      address {
+        font-style: normal;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 15px;
+      }
+    }
+    p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 156%;
+      margin-bottom: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Pt Sans;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+@media all and (max-width: 1860px) {
+  .completetProject .swiper2 .custom-controls {
+    .swiper-button-prev {
+      left: 1220px;
+      top: -20px;
+    }
+    .swiper-button-next {
+      right: 366px;
+      top: -23px;
+    }
+  }
+}
+@media all and (max-width: 1700px) {
+  .completetProject .swiper2 .custom-controls {
+    .swiper-button-prev {
+      left: 1120px;
+      top: -20px;
+    }
+    .swiper-button-next {
+      right: 266px;
+      top: -23px;
+    }
+  }
+}
+@media all and (max-width: 1504px) {
+  .completetProject .swiper2 .custom-controls {
+    .swiper-button-prev {
+      left: 917px;
+      top: -20px;
+    }
+    .swiper-button-next {
+      right: 166px;
+      top: -23px;
+    }
+  }
+}
+@media all and (max-width: 1404px) {
+  .completetProject .swiper2 .custom-controls {
+    .swiper-button-prev {
+      left: 768px;
+      top: -20px;
+    }
+    .swiper-button-next {
+      right: 116px;
+      top: -23px;
+    }
+  }
+}
+@media all and (max-width: 1250px) {
+  .contentComProject {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo {
+    img {
+      width: 100vw;
+      padding: 24px;
+    }
+  }
+  .infoComProject {
+    padding: 25px;
+  }
+  .completetProject .swiper2 .custom-controls {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: relative;
+      left: 0;
+      right: 0;
+      top: -20px;
+
+      img {
+        width: 60px;
+        height: 50px;
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .completetProject .swiper2 .custom-controls {
+    gap: 50px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      img {
+        width: 40px;
+        height: 32px;
+      }
+    }
+  }
+}
+@media all and (max-width: 750px) {
+  .completetProject .swiper2 .custom-controls {
+    gap: 100px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      img {
+        width: 70px;
+        height: 62px;
+      }
+    }
+  }
+}
+@media all and (max-width: 500px) {
+  .completetProject .swiper2 .custom-controls {
+    gap: 100px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      img {
+        width: 70px;
+        height: 62px;
+      }
+    }
+  }
+}
+@media all and (max-width: 300px) {
+  .completetProject .swiper2 .custom-controls {
+    gap: 30px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      img {
+        width: 35px;
+        height: 30px;
+      }
     }
   }
 }

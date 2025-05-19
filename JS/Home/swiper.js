@@ -50,8 +50,20 @@ const swiper2 = new Swiper(".swiper2", {
     draggable: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    740: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    1250: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
     1570: {
-      slidesPerView: 7,
+      slidesPerView: 6,
       spaceBetween: 30,
     },
   },
