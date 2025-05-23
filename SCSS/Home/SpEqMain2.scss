@@ -98,11 +98,12 @@
     color: transparent;
     top: -59px;
   }
+  .special-equipment-main-2 .container .custom-controls {
+    margin-top: 100px;
+  }
 }
 @media all and (max-width: 755px) {
-  .container {
-    width: 300px;
-  }
+
   .special-equipment-main-2 .container .spTitleImg h3 {
     text-align: center;
     font-size: 26px;
@@ -114,10 +115,13 @@
       width: 100%;
     }
   }
-      .special-equipment-main-2 .container .custom-controls .swiper-button-prev {
-        background: none;
-        color: transparent;
-        left: 171px;
-        top: -55px;
-    }
+  .special-equipment-main-2 .container .custom-controls .swiper-button-prev {
+    background: none;
+    color: transparent;
+    left: 171px;
+    top: -55px;
+  }
+  .special-equipment-main-2 .container .custom-controls {
+    margin-top: 100px;
+  }
 }

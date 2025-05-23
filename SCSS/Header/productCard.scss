@@ -148,3 +148,60 @@
   padding: 12px 28px;
   border: 1px solid #fcb427;
 }
+
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .swiper3 .swiper-button-prev {
+    top: -20px;
+    width: 72px;
+    left: 576px;
+  }
+  .product-card div:last-child button {
+    margin-top: 22px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: #fcb427;
+    padding: 12px 50px;
+  }
+  .swiper-slide button {
+    margin-bottom: 15px;
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .swiper3 .swiper-button-prev {
+    top: -20px;
+    width: 72px;
+    left: 154px;
+  }
+  .catalogEquipment .container h3 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 23px;
+  }
+  .product-card div:last-child p {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .product-card div:last-child button {
+    margin-top: 22px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+    background-color: #fcb427;
+    padding: 12px 19px;
+  }
+}
+// @media all and (max-width: 755px) {
+//   .container {
+//     width: 300px;
+//   }
+// }
