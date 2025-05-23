@@ -1,0 +1,41 @@
+.product-card {
+  width: 370px;
+  img + div {
+    background-color: white;
+    border-bottom: 1px solid yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    h3 {
+      font-weight: 700;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 25px;
+    }
+  }
+  div:last-child {
+    background-color: white;
+    padding: 10px 29px 23px 30px;
+    p {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    p:last-child {
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    button {
+    margin-top: 22px;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+      background-color: #fcb427;
+      padding: 12px 109px;
+    }
+  }
+}
+.product-card > img {
+  width: 100%;
+}

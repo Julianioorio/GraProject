@@ -73,3 +73,27 @@ const swiper2 = new Swiper(".swiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+const swiper3 = new Swiper(".swiper3", {
+  modules: [Navigation, Pagination, Scrollbar],
+  // Настройки слайдера
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+
+  // Пагинация
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+
+  // Навигационные кнопки
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
