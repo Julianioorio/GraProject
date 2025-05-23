@@ -1,14 +1,22 @@
-.catalogEquipment{
-    background-color: rgb(243, 243, 243);
-    padding-top: 81px;
-    padding-bottom: 120px;
-    .container{
-        position: relative;
-        h3 {
-            font-family: PT Sans;
-            font-weight: 700;
-            font-size: 40px;
-        }
-        
+.catalogEquipment {
+  background-color: rgb(243, 243, 243);
+  padding-top: 81px;
+  padding-bottom: 120px;
+  .container {
+     overflow: hidden;
+    position: relative;
+    h3 {
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 40px;
+    }
+  }
+}
+.swiper3 {
+    .swiper-button-next {
+        display: block;
+    }
+    .swiper-button-prev {
+        display: block;
     }
 }
