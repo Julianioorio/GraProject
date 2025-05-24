@@ -1,0 +1,50 @@
+.info {
+  background-color: rgb(245, 245, 245);
+  padding-top: 157px;
+  padding-bottom: 120px;
+  .container {
+    display: flex;
+    gap: 9px;
+    h2 {
+      font-family: PT Sans;
+      font-size: 40px;
+      margin-bottom: 41px;
+    }
+    .infotext {
+      p {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2d2d2d;
+      }
+    }
+  }
+}
+@media all and (max-width: 1250px) {
+  .info .container {
+    flex-direction: column;
+    .infotext {
+      position: relative;
+      order: 2;
+    }
+    .infotext + div {
+      order: 1;
+      img {
+        width: 100%;
+      }
+    }
+    h2 {
+      top: -572px;
+      position: absolute;
+    }
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .info .container h2 {
+    top: -271px;
+    position: absolute;
+  }
+}
