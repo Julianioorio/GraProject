@@ -6,6 +6,7 @@
       display: flex;
       justify-content: space-between;
       p:first-child {
+        text-align: center;
         font-size: 70px;
         font-family: PT Sans;
         font-weight: 700;
@@ -13,6 +14,37 @@
         -webkit-text-stroke: 2px white;
       }
       p:last-child {
+        text-align: center;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+}
+.infoUs2 {
+  background-color: rgb(45, 45, 45);
+  padding: 105px 0;
+  .container {
+    h2 {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 23px;
+    }
+    .infoUsMain {
+      display: flex;
+      justify-content: space-between;
+      p:first-child {
+        text-shadow: 18px -15px 2px rgba(10, 9, 10, 0.58);
+        text-align: center;
+        font-size: 70px;
+        font-family: PT Sans;
+        font-weight: 700;
+        color: white;
+      }
+      p:last-child {
+        text-align: center;
         font-family: Montserrat;
         font-weight: 700;
         font-size: 18px;
