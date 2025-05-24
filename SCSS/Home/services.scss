@@ -1,0 +1,41 @@
+.services {
+  padding-top: 54px;
+  padding-bottom: 104px;
+  h2 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .conServices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    div {
+      max-width: 370px;
+      flex-basis: 33%;
+    }
+    p {
+      background-color: #fcb427;
+      color: white;
+      text-align: center;
+      padding: 18px 21px;
+      font-family: Montserrat;
+      font-weight: 700;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media all and (max-width: 1250px) {
+  .services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 768px) {
+  .services .conServices div {
+    flex-basis: auto;
+  }
+}
