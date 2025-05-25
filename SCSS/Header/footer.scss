@@ -1,0 +1,136 @@
+.footer {
+  background-color: #2d2d2d;
+  padding-top: 54px;
+  padding-bottom: 100px;
+  .footerMaster {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logofooter {
+    display: flex;
+    flex-direction: column;
+    p:nth-child(2) {
+      font-family: Montserrat;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 100%;
+      color: white;
+      letter-spacing: 0%;
+    }
+    p:nth-child(3) {
+      margin-top: 28px;
+      font-family: Montserrat;
+      color: #b5b5b5;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 160%;
+      letter-spacing: 0px;
+    }
+  }
+  div {
+    ul {
+      list-style-type: none;
+      li:first-child {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 13px;
+        color: white;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 7px;
+        a {
+          font-family: Montserrat;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 12px;
+          color: white;
+        }
+      }
+    }
+  }
+  .btnContacts {
+    button {
+      padding: 11px 22px;
+      margin-bottom: 33px;
+      color: black;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 15px;
+      background-color: white;
+    }
+    button + div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .btnContacts + div {
+    h2 {
+      font-family: Roboto;
+      color: white;
+      margin-bottom: 14px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    a {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .footer .logofooter img {
+    width: 115px;
+  }
+  .btnContacts {
+    position: absolute;
+    top: 194px;
+    left: 386px;
+  }
+  .btnContacts + div {
+    position: absolute;
+    top: 191px;
+    left: 592px;
+  }
+  .footer .logofooter p:nth-child(3) {
+    position: absolute;
+    top: 231px;
+  }
+}
+@media all and (max-width: 768px) { 
+  .btnContacts {
+    position: static;
+   
+  }
+  .btnContacts + div {
+    position: static;
+  }
+  .footer .logofooter p:nth-child(3) {
+    position: absolute;
+    top: 630px;
+  }
+  .footer .logofooter {
+    align-items: center;
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+  .footer .footerMaster {
+    div {
+      margin-bottom: 23px;
+    }
+  }
+  .btnContacts +div {
+    display: none;
+  }
+  .btnContacts {
+    margin: 0 auto;
+  }
+}
+
