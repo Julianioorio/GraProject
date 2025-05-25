@@ -1,0 +1,118 @@
+.formOrderPrime {
+  max-height: 1920px;
+  padding-bottom: 75px;
+  padding-top: 75px;
+  background: url("../../img/mahinaUltra.png") no-repeat right;
+  background-color: #2d2d2d;
+  h3 {
+    font-family: PT Sans;
+    color: white;
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 157%;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+  }
+  form {
+    margin-left: 33px;
+    input {
+      padding-top: 14px;
+      width: 490px;
+      height: 50px;
+      padding-bottom: 14px;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      display: block;
+      border: 1px solid #c4c4c4;
+      background-color: #2d2d2d;
+    }
+    input:nth-of-type(4) {
+      width: 20px;
+      accent-color: #2d2d2d;
+      display: inline;
+      margin-bottom: 0;
+      padding: 0;
+      height: 15px;
+      margin-right: 10px;
+    }
+    span {
+      color: white;
+      margin: 0;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      word-break: break-all;
+    }
+    textarea {
+      resize: none;
+      width: 490px;
+      height: 100px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      display: block;
+      border: 1px solid #c4c4c4;
+      background-color: #2d2d2d;
+    }
+    button {
+      display: block;
+      margin-top: 20px;
+      width: 490px;
+      color: white;
+      background-color: #fcb427;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .formOrderPrime form {
+    margin-left: 0px;
+  }
+  .formOrderPrime form input {
+    padding-top: 14px;
+    width: 300px;
+    height: 50px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    display: block;
+    border: 1px solid #c4c4c4;
+    background-color: #2d2d2d;
+  }
+  .formOrderPrime form textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    display: block;
+    border: 1px solid #c4c4c4;
+    background-color: #2d2d2d;
+  }
+  .formOrderPrime form button {
+    display: block;
+    margin-top: 20px;
+    width: 300px;
+    color: white;
+    background-color: #fcb427;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
