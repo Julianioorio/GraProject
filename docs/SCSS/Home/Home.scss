@@ -1,4 +1,6 @@
 @use "../Header/header.scss";
+@use "../Header/footer.scss";
+
 @use "../Home/rentAnyTasks.scss";
 @use "../Home/SpEqMain2.scss";
 @use "../Home/usReliable.scss";
@@ -9,7 +11,7 @@
 @use "../Home/info.scss";
 @use "../Home/services.scss";
 @use "../Home/textInfo.scss";
-@use "../Home/formOrderPrime.scss";
-@use "../Header/footer.scss";
+@use "./Home/formOrderPrime.scss";
+
 
 @use "../Home/productCard.scss"; // Стили для карточки товара 
