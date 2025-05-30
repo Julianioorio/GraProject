@@ -1,0 +1,27 @@
+.tons {
+  padding-top: 59px;
+  padding-bottom: 55px;
+  background-color: rgb(243, 243, 243);
+  h1 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 14px;
+  }
+  .tonsBtn {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 12px;
+    li {
+      button {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        color: #2D2D2D;
+        padding: 5px 25px;
+        border: 1px solid #FFBF1D45;
+      }
+    }
+  }
+}
