@@ -1,4 +1,4 @@
-class productCard {
+class ProductCard {
   constructor({ id, title, image }) {
     this.id = id;
     this.title = title;

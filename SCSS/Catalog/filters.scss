@@ -1,0 +1,173 @@
+.filters {
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 120px;
+  .filCon {
+    display: flex;
+    .filParameters {
+      display: flex;
+      flex-direction: column;
+      .parameters {
+        width: 270px;
+        margin-bottom: 50px;
+        h6 {
+          padding: 14px 121px 16px 36px;
+          color: white;
+          background-color: #2d2d2d;
+          font-family: Montserrat;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .btnParameters {
+          background-color: white;
+          padding: 30px 36px 41px;
+          h4 {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 19px;
+          }
+          input[type="checkbox"] {
+            vertical-align: sub;
+            margin-bottom: 15px;
+          }
+          input[type="checkbox"]:last-of-type {
+            margin-bottom: 30px;
+          }
+
+          input[type="text"] {
+            width: 84px;
+            margin-bottom: 15px;
+          }
+
+          /* Стили для noUiSlider */
+          #price-from {
+            margin-right: 25px;
+          }
+          #height-from {
+            margin-right: 25px;
+          }
+          #height-from-2 {
+            margin-right: 25px;
+          }
+          #slider {
+            margin-bottom: 30px;
+          }
+          .noUi-target {
+            width: 100%;
+            margin-top: 20px; /* Отступ сверху для размещения под input'ами */
+            margin-bottom: 20px;
+            height: 3px; /* Высота трека */
+            background: #ccc; /* Цвет трека */
+            border: none; /* Убираем стандартные границы */
+            box-shadow: none; /* Убираем стандартные тени */
+          }
+
+          .noUi-connect {
+            background: #fcb427; /* Оранжевый цвет заполненной части */
+          }
+
+          .noUi-handle {
+            border-radius: 0; /* Острые углы ползунка */
+            background: #fcb427; /* Оранжевый цвет ползунка */
+            border: none; /* Убираем стандартные границы */
+            cursor: pointer;
+            width: 18px; /* Ширина ползунка */
+            height: 9px; /* Высота ползунка */
+            top: -3px; /* Смещаем ползунок для центрирования на треке */
+            box-shadow: none; /* Убираем стандартные тени */
+          }
+
+          /* Скрываем или делаем прозрачными псевдоэлементы, создающие белые полоски */
+          .noUi-handle::before,
+          .noUi-handle::after {
+            display: none; /* Скрываем псевдоэлементы */
+          }
+
+          /* Стилизация тултипов (если используются) */
+          .noUi-tooltip {
+            display: none; /* Скрываем стандартные тултипы, если они есть */
+          }
+          .clear {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 28px;
+            margin-top: 27px;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+            color: #c4c4c4;
+          }
+          .show {
+            width: 100%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: PT Sans;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+            background-color: #2d2d2d;
+          }
+
+          span {
+            vertical-align: sub;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+      }
+      .park {
+        width: 270px;
+        h6 {
+          padding: 14px 0px 16px 36px;
+          color: white;
+          background-color: #2d2d2d;
+          font-family: Montserrat;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .btnPark {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          background-color: white;
+          padding: 30px 36px 41px;
+          div > div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            h4 {
+              font-family: Montserrat;
+              font-weight: 700;
+              font-size: 15px;
+            }
+            img {
+              cursor: pointer;
+            }
+          }
+          .open {
+            display: flex;
+          }
+          div > div + div {
+            display: none;
+            flex-direction: column;
+            gap: 13px;
+            a {
+              font-family: Montserrat;
+              font-weight: 400;
+              font-size: 12px;
+              color: #2d2d2d;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .filRes {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

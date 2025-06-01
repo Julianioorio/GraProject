@@ -41,6 +41,7 @@
 - JavaScript
 - ESLint
 - Swiper
+- noUiSlider
 
 ## Лицензия
 
