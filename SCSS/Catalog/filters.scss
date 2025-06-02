@@ -3,6 +3,7 @@
   padding-bottom: 120px;
   .filCon {
     display: flex;
+    gap: 30px;
     .filParameters {
       display: flex;
       flex-direction: column;
@@ -163,11 +164,97 @@
             }
           }
         }
+        &.openPark {
+          position: absolute;
+          top: 838px;
+          display: block;
+          z-index: 1;
+          background: white;
+          width: 270px;
+          left: 0px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+      &.openFil {
+        position: absolute;
+        display: block !important;
+        z-index: 1;
+        background: white;
+        width: 270px;
+        top: 1212px;
+        left: 204px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
     }
     .filRes {
       display: flex;
       flex-direction: column;
+      flex: 1 1 auto;
+      gap: 26px;
+      position: relative;
+      .filMobile {
+        position: absolute;
+        display: none;
+        height: 44px;
+        width: 61px;
+        background-color: #535554;
+      }
+      .orientation {
+        display: flex;
+        justify-content: space-between;
+        img {
+          cursor: pointer;
+        }
+        #select {
+          margin-left: 25px;
+          outline: none;
+          border: 1px solid #535554;
+          padding: 6px 15px;
+          background-color: rgb(243, 243, 243);
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 12px;
+        }
+        div:last-of-type {
+          img {
+            cursor: pointer;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+        }
+      }
+      #productCard {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+      }
     }
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .tons {
+    padding-top: 59px;
+    padding-bottom: 110px;
+    background-color: rgb(243, 243, 243);
+  }
+  .filters .filCon .filParameters {
+    display: none;
+    &.openFil {
+      display: block;
+    }
+  }
+  .filters .filCon .filRes .filMobile {
+    display: block;
+    top: -63px;
+  }
+  .filters .filCon .filRes .filMobile img {
+    position: absolute;
+    top: 10px;
+    left: 27px;
+    cursor: pointer;
   }
 }

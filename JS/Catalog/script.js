@@ -1,6 +1,7 @@
 import "../../SCSS/Catalog/Catalog.scss";
 import { initializeSlider } from "./slider.js";
 import "./parkPoint.js";
+import "./parPark.js";
 import { headerBurger, headerSearch } from "../Header/header.js";
 
 // document.getElementById("ggg").addEventListener("click", async function () {
