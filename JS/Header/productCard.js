@@ -1,9 +1,8 @@
-class ProductCard {
-  constructor({ id, title, image, tons}) {
-    this.id = id;
+export class ProductCard {
+  constructor({ title, image, tons }) {
     this.title = title;
     this.image = image;
-    this.tons = tons
+    this.tons = tons;
   }
   render() {
     const card = document.createElement("div");
@@ -22,10 +21,9 @@ class ProductCard {
 }
 
 const productData = {
-  id: 1,
   title: "Гусеничный кран Liebherr LR 1750",
   image: "img/Gkran.jpg",
-  tons: '40'
+  tons: "40",
 };
 
 const swiperWrapper = document.querySelector(".swiper3 .swiper-wrapper");
