@@ -8,7 +8,7 @@ function searchByTons(tons) {
       const resCard = document.getElementById("productCard");
       resCard.innerHTML = "";
       data.forEach((element) => {
-        const card = new ProductCard("Гусеничный кран Liebherr LR 1750","img/Gkran.jpg",element);
+        const card = new ProductCard(element);
         resCard.appendChild(card.render());
       });
     })

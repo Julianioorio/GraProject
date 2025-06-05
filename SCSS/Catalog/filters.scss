@@ -258,3 +258,16 @@
     cursor: pointer;
   }
 }
+#productCard .product-card {
+  max-width: 270px;
+  height: 490px;
+}
+#productCard .product-card div:last-child button {
+    margin-top: 22px;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    background-color: #fcb427;
+    padding: 12px 0px;
+}
