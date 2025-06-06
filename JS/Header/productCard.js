@@ -23,7 +23,7 @@ export class ProductCard {
 
 const productData = {
   title: "Гусеничный кран Liebherr LR 1750",
-  image: 'img/Gcran.jpeg',
+  image: 'img/Gkran.jpg',
   tons: "40",
 };
 
