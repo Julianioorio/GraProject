@@ -9,7 +9,7 @@ export class ProductCard {
     const card = document.createElement("div");
     card.className = "product-card";
 
-    card.innerHTML = `<img src="${this.image}" alt="${this.title}" /> 
+    card.innerHTML = `<img src="${gCran}" alt="${this.title}" /> 
       <div><h3>${this.title}</h3></div>
       <div>
       <p>Грузоподъемность: ${this.tons} тонн</p>
