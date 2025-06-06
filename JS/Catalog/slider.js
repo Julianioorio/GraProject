@@ -4,7 +4,7 @@ import "nouislider/dist/nouislider.css";
 export function initializeSlider() {
   console.log("initializeSlider function called");
 
-  // Ползунок для Грузоподъемности
+  // Ползуноки
   const weightSlider = document.getElementById("weight-slider");
   const weightInputFrom = document.getElementById("price-from");
   const weightInputTo = document.getElementById("price-to");
@@ -100,7 +100,6 @@ export function initializeSlider() {
         min: 50,
         max: 169,
       },
-      // Добавьте сюда настройки внешнего вида noUiSlider
     });
 
     heightSlider2.noUiSlider.on("update", (values, handle) => {
