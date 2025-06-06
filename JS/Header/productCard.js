@@ -1,4 +1,4 @@
-import gCran from "../../img/Gkran.jpg"
+
 export class ProductCard {
   constructor({ title, image, tons }) {
     this.title = title;
@@ -9,7 +9,7 @@ export class ProductCard {
     const card = document.createElement("div");
     card.className = "product-card";
 
-    card.innerHTML = `<img src="${gCran}" alt="${this.title}" /> 
+    card.innerHTML = `<img src="${this.image}" alt="${this.title}" /> 
       <div><h3>${this.title}</h3></div>
       <div>
       <p>Грузоподъемность: ${this.tons} тонн</p>
@@ -23,7 +23,7 @@ export class ProductCard {
 
 const productData = {
   title: "Гусеничный кран Liebherr LR 1750",
-  image: gCran,
+  image: 'img/Gcran.jpeg',
   tons: "40",
 };
 

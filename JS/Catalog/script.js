@@ -6,7 +6,6 @@ import { headerBurger, headerSearch } from "../Header/header.js";
 import './tonsClick.js';
 import '../Header/productCard.js';
 
-
 headerBurger();
 headerSearch();
 
