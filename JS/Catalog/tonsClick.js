@@ -1,5 +1,5 @@
 import { ProductCard } from "../Header/productCard";
-
+import "../Header/productCard";
 function searchByTons(tons) {
   fetch(`http://localhost:4000/products?tons=${tons}`)
     .then((res) => res.json())
