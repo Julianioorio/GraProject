@@ -1,3 +1,4 @@
+import gCran from "../../img/Gkran.jpg"
 export class ProductCard {
   constructor({ title, image, tons }) {
     this.title = title;
@@ -22,7 +23,7 @@ export class ProductCard {
 
 const productData = {
   title: "Гусеничный кран Liebherr LR 1750",
-  image: "img/Gkran.jpg",
+  image: gCran,
   tons: "40",
 };
 
