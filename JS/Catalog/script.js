@@ -5,6 +5,8 @@ import "./parPark.js";
 import { headerBurger, headerSearch } from "../Header/header.js";
 import './tonsClick.js';
 import './clickClear.js';
+import './listShow.js';
+import './GroupShow.js';
 import '../Header/productCard.js';
 
 headerBurger();

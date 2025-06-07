@@ -20,6 +20,14 @@ export { searchByTons };
 document.querySelector(".tonsBtn").addEventListener("click", function (event) {
   if (event.target.tagName === "BUTTON") {
     let texst = event.target.innerHTML.match(/[\d,.]+/);
+    if (document.getElementById("productCard").style.flexDirection === "column") {
+      const pList = document.querySelectorAll("#productCard p");
+      pList.forEach((el) => {
+        el.textContent = `Грузоподъемность: ${event.target.innerHTML}`;
+      });
+      return;
+    }
+    document.getElementById("productCard").style.flexDirection = "row";
     searchByTons(texst[0]);
   }
 });
