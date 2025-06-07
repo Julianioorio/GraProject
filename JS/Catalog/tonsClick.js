@@ -4,7 +4,6 @@ function searchByTons(tons) {
   fetch(`http://localhost:4000/products?tons=${tons}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log("Результаты поиска по тоннам:", data);
       const resCard = document.getElementById("productCard");
       resCard.innerHTML = "";
       data.forEach((element) => {

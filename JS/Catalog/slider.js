@@ -2,15 +2,12 @@ import noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
 
 export function initializeSlider() {
-  console.log("initializeSlider function called");
-
   // Ползуноки
   const weightSlider = document.getElementById("weight-slider");
   const weightInputFrom = document.getElementById("price-from");
   const weightInputTo = document.getElementById("price-to");
 
   if (weightSlider && weightInputFrom && weightInputTo) {
-    console.log("Weight slider elements found");
     noUiSlider.create(weightSlider, {
       start: [40, 750], // Начальные значения для двух ползунков
       connect: true, // Соединить ползунки полосой
@@ -51,7 +48,6 @@ export function initializeSlider() {
   const heightInputTo = document.getElementById("height-to");
 
   if (heightSlider && heightInputFrom && heightInputTo) {
-    console.log("Height slider elements found");
     noUiSlider.create(heightSlider, {
       start: [10, 84], // Начальные значения для двух ползунков
       connect: true, // Соединить ползунки полосой
@@ -92,7 +88,6 @@ export function initializeSlider() {
   const heightInputTo2 = document.getElementById("height-to-2");
 
   if (heightSlider2 && heightInputFrom2 && heightInputTo2) {
-    console.log("Height slider 2 elements found");
     noUiSlider.create(heightSlider2, {
       start: [50, 169], // Начальные значения для двух ползунков
       connect: true, // Соединить ползунки полосой
