@@ -24,4 +24,7 @@ document.querySelector(".show").addEventListener("click", function () {
       });
     })
     .catch((err) => console.error("Ошибка поиска:", err));
+    if(document.querySelector('.container').style.width = '300px'){
+      document.querySelector('.filParameters').classList.remove('openFil')
+    }
 });
