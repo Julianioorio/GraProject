@@ -5,7 +5,7 @@
   padding-bottom: 55px;
   max-width: 1920px;
   background-size: contain;
-  background: url("../../img/Mahina.png") no-repeat right;
+  background: url("../../public/img/Mahina.png") no-repeat right;
   margin: 0 auto;
   h2 {
     font-family: PT Sans;
@@ -34,6 +34,11 @@
       color: white;
       background-color: #fcb427;
       border: none;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 142%;
+      letter-spacing: 0%;
     }
     p {
       display: inline;

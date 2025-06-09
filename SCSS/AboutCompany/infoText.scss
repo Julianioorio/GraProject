@@ -1,0 +1,26 @@
+.textInfo {
+    padding-top: 125px;
+    padding-bottom: 120px;
+  .container {
+    div:first-child {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    p {
+      display: flex;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 157%;
+      letter-spacing: 0%;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
