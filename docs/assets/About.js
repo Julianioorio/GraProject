@@ -1,0 +1,2 @@
+import"./modulepreload-polyfill.js";import{S as e,N as i,P as s,a}from"./scrollbar.js";new e(".swiper3",{modules:[i,s,a],slidesPerView:1,spaceBetween:30,loop:!1,pagination:{el:".swiper-pagination",clickable:!0},scrollbar:{el:".swiper-scrollbar",draggable:!0,hide:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{300:{slidesPerView:1,spaceBetween:20},740:{slidesPerView:2,spaceBetween:20},1250:{slidesPerView:3,spaceBetween:30},1570:{slidesPerView:3,spaceBetween:30}}});
+//# sourceMappingURL=About.js.map

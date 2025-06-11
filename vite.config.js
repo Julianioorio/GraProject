@@ -20,7 +20,12 @@ export default defineConfig({
         Objects: resolve(__dirname, "Objects.html"),
         Blog: resolve(__dirname, "Blog.html"),
         Contact: resolve(__dirname, "Contact.html"),
-        ObjectsPages: resolve(__dirname, "ObjectPages.html"),
+        ObjectPages: resolve(__dirname, "ObjectPages.html"),
+      },
+      output: {
+        assetFileNames: "assets/[name][extname]",
+        chunkFileNames: "assets/[name].js",
+        entryFileNames: "assets/[name].js",
       },
     },
   },
