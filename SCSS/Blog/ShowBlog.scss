@@ -1,0 +1,80 @@
+.showBlog {
+  background-color: rgb(243, 243, 243);
+  padding-top: 63px;
+  padding-bottom: 120px;
+  h1 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 80px;
+  }
+  .Blog {
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    h3 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    img {
+      width: 370px;
+    }
+  }
+  .Blog > div {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Blog > div > div:last-child {
+    background-color: white;
+    padding: 15px 32px 25px 22px;
+    button {
+      margin-top: 20px;
+      background-color: #fcb427;
+      color: white;
+      padding: 12px 62px;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .Download {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fcb427;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 53px;
+  }
+}
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .showBlog .Blog > div {
+    width: 354px;
+  }
+  .showBlog .Blog img {
+    width: 354px;
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .showBlog .Blog > div {
+    width: 300px;
+  }
+  .showBlog .Blog img {
+    width: 300px;
+  }
+}
