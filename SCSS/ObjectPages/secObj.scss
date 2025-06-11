@@ -1,0 +1,109 @@
+.SerObj {
+  background-color: rgb(243, 243, 243);
+  padding-top: 81px;
+  padding-bottom: 120px;
+  .container {
+    overflow: hidden;
+    position: relative;
+    h4 {
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 84px;
+    }
+
+    button {
+      background-color: rgb(243, 243, 243);
+      display: block;
+      margin: 30px auto 0;
+      border: 1px solid #fcb427;
+      padding: 12px 57px;
+      a {
+        color: black;
+        text-decoration: none;
+        font-family: PT Sans;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.swiper3 {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 1072px;
+  }
+
+  .swiper-slide {
+    cursor: pointer;
+    > div {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 370px;
+      }
+      > div:last-child {
+        background-color: white;
+        padding: 15px 32px 25px 22px;
+        p {
+          font-family: Montserrat;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 142%;
+          letter-spacing: 0%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .swiper-button-prev {
+      left: 740px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-slide > div img {
+      width: 354px;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    .swiper-slide > div img {
+      width: 300px;
+    }
+    .swiper-slide {
+      width: 100%;
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
