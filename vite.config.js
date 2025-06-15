@@ -21,6 +21,7 @@ export default defineConfig({
         Blog: resolve(__dirname, "Blog.html"),
         Contact: resolve(__dirname, "Contact.html"),
         ObjectPages: resolve(__dirname, "ObjectPages.html"),
+        ProducrCard: resolve(__dirname, "ProductCard.html"),
       },
       output: {
         assetFileNames: "assets/[name][extname]",

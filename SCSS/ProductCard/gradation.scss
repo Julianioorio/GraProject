@@ -1,0 +1,52 @@
+.gradation {
+  background-color: rgb(243, 243, 243);
+}
+.description {
+  display: none;
+  padding-top: 50px;
+  h2 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+  p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .imgDes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .description .imgDes img {
+    width: 200px;
+  }
+}
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .description {
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+    .imgDes {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

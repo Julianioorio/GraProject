@@ -1,0 +1,43 @@
+.blockinfo {
+  background-color: rgb(243, 243, 243);
+  .activeBtn {
+    font-weight: 700;
+    color: black;
+    border-bottom: 3px solid #ffbf1d;
+    z-index: 1;
+  }
+}
+
+.clickInfo {
+  display: flex;
+  button {
+    padding: 10px 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .blockinfo {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .clickInfo {
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
