@@ -1,0 +1,180 @@
+.showBlog {
+  background-color: rgb(243, 243, 243);
+  padding-top: 63px;
+  padding-bottom: 120px;
+  h1 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 80px;
+  }
+  .Blog {
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    h3 {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    img {
+      width: 370px;
+    }
+  }
+  .Blog > div {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Blog > div > div:last-child {
+    background-color: white;
+    padding: 15px 32px 25px 22px;
+    button {
+      margin-top: 20px;
+      background-color: #fcb427;
+      color: white;
+      padding: 12px 62px;
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .Download {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fcb427;
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 53px;
+  }
+}
+
+.SerBlog {
+  background-color: rgb(243, 243, 243);
+  padding-top: 63px;
+  padding-bottom: 120px;
+  .container {
+    position: relative;
+    overflow: hidden;
+  }
+  h4 {
+    font-family: PT Sans;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 80px;
+  }
+  .swiper3 {
+    position: relative;
+    width: 100%;
+    .swiper-wrapper {
+      display: flex;
+      gap: 29px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+      top: -50px;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &::after {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+    }
+
+    .swiper-button-prev {
+      left: 1072px;
+    }
+
+    .swiper-slide {
+      width: 370px !important;
+      > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        > div:first-child {
+          img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+        > div:last-child {
+          background-color: white;
+          padding: 15px 32px 25px 22px;
+          h3 {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 18px;
+          }
+          p {
+            margin-top: 20px;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+          }
+          button {
+            margin-top: 20px;
+            background-color: #fcb427;
+            color: white;
+            padding: 12px 62px;
+            font-family: PT Sans;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .SerBlog .swiper3 {
+    .swiper-slide {
+      width: 354px !important;
+    }
+    .swiper-button-prev {
+      left: 740px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .SerBlog .swiper3 {
+    .swiper-slide {
+      width: 300px !important;
+    }
+  }
+}

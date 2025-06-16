@@ -1,0 +1,52 @@
+.rentBlogImg {
+  background-color: rgb(243, 243, 243);
+  padding-top: 59px;
+  .BlogImg {
+    h1 {
+      font-family: PT Sans;
+      font-weight: 700;
+      font-size: 44px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .imgB {
+      display: flex;
+      gap: 30px;
+      width: 100%;
+      img {
+        width: 570px;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .container {
+    width: 740px;
+  }
+  .rentBlogImg .BlogImg .imgB {
+    img {
+      width: 354px;
+      height: 250px;
+    }
+  }
+}
+
+@media all and (max-width: 755px) {
+  .container {
+    width: 300px;
+  }
+  .rentBlogImg .BlogImg .imgB {
+    flex-direction: column;
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
