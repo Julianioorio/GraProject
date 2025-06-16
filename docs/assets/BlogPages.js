@@ -1,0 +1,2 @@
+import"./modulepreload-polyfill.js";import{S as e,N as a,P as i,a as s}from"./scrollbar.js";import{h as r,a as t}from"./header.js";new e(".swiper3",{modules:[a,i,s],slidesPerView:1,spaceBetween:30,loop:!1,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{300:{slidesPerView:1,spaceBetween:20},740:{slidesPerView:2,spaceBetween:20},1250:{slidesPerView:3,spaceBetween:30},1570:{slidesPerView:3,spaceBetween:30}}});r();t();
+//# sourceMappingURL=BlogPages.js.map
