@@ -11,6 +11,7 @@ import "./showFiltres.js";
 import "./swiperCard.js";
 import "../Header/productCard.js";
 import '../Header/rentButton.js';
+import '../Header/modalWindow.js';
 
 headerBurger();
 headerSearch();

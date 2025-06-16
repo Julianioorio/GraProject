@@ -40,7 +40,7 @@
                     ул. Куликовская, 12
                   </address>
                 </div>
-                <div><button class="connectionBtn header-button">Свяжитесь со мной</button></div>
+                <div><button class="header-button"><a href="Contact.html">Свяжитесь со мной</a></button></div>
                 <div>
                   <img src="img/phoneCall.svg" alt="phoneCall" />
                   <div>
@@ -91,7 +91,7 @@
                 работаем по всей России
               </p>
               <div>
-                <button class="connectionBtn">Заказать звонок</button>
+                <button><a href="Contact.html">Заказать звонок</a></button>
                 <button>Каталог техники</button>
               </div>
             </div>
@@ -178,7 +178,7 @@
                 </div>
               </div>
             </div>
-            <button class="connectionBtn">Заказать свонок</button>
+            <button><a href="Contact.html">Заказать свонок</a></button>
           </div>
         </section>
         <section class="infoUs">
@@ -307,11 +307,17 @@
         <section class="formOrder">
           <div class="container">
             <h2><span>Оперативно</span> поставим технику</h2>
-            <form action="">
-              <div class="from"><input type="text" placeholder="Ваше имя" /><input type="tel" placeholder="Ваш телефон" /><button class="connectionBtn">Заказать звонок</button></div>
+            <form action="http://localhost:4000/submit"  method="post">
+              <div class="from">
+                <input type="text" placeholder="Ваше имя"  name="name" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" /><input type="tel" name="tel" placeholder="Ваш телефон" pattern="^\+[0-9\s\-().]{7,20}$" /><button
+                  class="connectionBtn"
+                >
+                  Заказать звонок
+                </button>
+              </div>
               <br />
               <br />
-              <input type="checkbox" />
+              <input type="checkbox" name="Agree"/>
               <p>Я согласен с <a href="#">условиями обработки</a> и использования моих персональных данных</p>
             </form>
           </div>
@@ -425,10 +431,15 @@
               Оставьте заявку на звонок и мы ответим на все ваши вопросы в<br />
               самое ближайшее время
             </p>
-            <form action="">
-              <input type="text" placeholder="Ваше имя" /><input type="text" placeholder="Ваш телефон*" /><input type="text" placeholder="Ваша почта" />
-              <textarea name="" id="" placeholder="Оставьте ваш вопрос"></textarea>
-              <input type="checkbox" /><span>Я согласен с условиями обработки и использования моих персональных данных</span>
+            <form action="http://localhost:4000/submit"  method="post">
+              <input type="text" placeholder="Ваше имя" name="name" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" /><input
+                type="text"
+                placeholder="Ваш телефон*"
+                name="tel"
+                pattern="^\+[0-9\s\-().]{7,20}$"
+              /><input type="text" placeholder="Ваша почта" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="E-mail"/>
+              <textarea name="message" placeholder="Оставьте ваш вопрос" pattern="^[a-zA-Zа-яА-ЯёЁ\s]{1,30}$"></textarea>
+              <input type="checkbox" name="Agree"/><span>Я согласен с условиями обработки и использования моих персональных данных</span>
               <button class="connectionBtn">Заказать звонок</button>
             </form>
           </div>
@@ -449,7 +460,7 @@
         <div class="container">
           <div class="footerMaster">
             <div class="logofooter">
-              <img src="img/Logo.svg" alt="logo" />
+              <a href="index.html"><img src="img/Logo.svg" alt="logo" /></a>
               <p>
                 Аренда мобильных и<br />
                 гусеничных кранов LIEBHERR
@@ -488,7 +499,7 @@
               </ul>
             </nav>
             <div class="btnContacts">
-              <button class="connectionBtn">Свяжитесь со мной</button>
+              <button><a href="Contact.html">Свяжитесь со мной</a></button>
               <div>
                 <a href=""><img src="img/insta.svg" alt="insta" /></a><a href="#"><img src="img/twiter.svg" alt="twiter" /></a><a href="#"><img src="img/viber.svg" alt="viber" /></a
                 ><a href="#"><img src="img/vkontacte.svg" alt="vkontacte" /></a><a href="#"><img src="img/Yandex.svg" alt="Yandex" /></a>

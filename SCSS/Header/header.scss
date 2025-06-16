@@ -60,13 +60,17 @@ button {
     }
     div:nth-child(2) {
       .header-button {
-        margin-top: 10px;
-        font-family: PT Sans;
-        font-weight: 700;
-        font-size: 18px;
-        color: white;
-        border: 1px solid #ffbf1d;
-        padding: 8px 27px;
+        a {
+          display: block;
+          font-family: PT Sans;
+          font-weight: 700;
+          font-size: 18px;
+          color: white;
+          border: 1px solid #ffbf1d;
+          text-decoration: none;
+          margin-top: 10px;
+          padding: 8px 27px;
+        }
       }
     }
     div:nth-child(3) {
@@ -180,24 +184,24 @@ button {
   }
 }
 .search-result-item {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
 }
 
 .search-result-item:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 #search-results {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid #ddd;
-    max-height: 300px;
-    overflow-y: auto;
-    z-index: 1000;
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
 }
 @media all and (max-width: 1250px) {
   .header-bot nav ul {
@@ -234,5 +238,5 @@ button {
   .header-bot div input {
     height: 30px;
     width: 130px;
-}
+  }
 }

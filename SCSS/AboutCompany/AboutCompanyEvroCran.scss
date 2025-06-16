@@ -21,6 +21,10 @@
     }
   }
 }
+#burger+ul>li:nth-of-type(2)>a {  //стили для подчёркивания в Headere
+  font-weight: 600;
+  border-bottom: 2px solid #FCB427;
+}
 @media all and (max-width: 1250px) {
   .container {
     width: 740px;

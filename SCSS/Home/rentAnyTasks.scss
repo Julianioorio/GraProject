@@ -33,13 +33,17 @@
     }
     div {
       button:nth-child(1) {
-        background-color: #fcb427;
-        padding: 12px 46px;
-        color: white;
-        font-family: PT Sans;
-        font-weight: 600;
-        font-size: 18px;
-        margin-right: 26px;
+        a {
+          display: block;
+          text-decoration: none;
+          background-color: #fcb427;
+          padding: 12px 46px;
+          color: white;
+          font-family: PT Sans;
+          font-weight: 600;
+          font-size: 18px;
+          margin-right: 26px;
+        }
       }
       button:nth-child(2) {
         color: black;
@@ -70,10 +74,10 @@
     padding-bottom: 54px;
     background-size: 100% 100%;
     br {
-        display: none;
+      display: none;
     }
   }
-  div button:nth-child(1){
+  div button:nth-child(1) {
     margin-bottom: 20px;
     margin-right: 0;
   }

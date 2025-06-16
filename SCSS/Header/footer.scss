@@ -54,13 +54,17 @@
   }
   .btnContacts {
     button {
-      padding: 11px 22px;
-      margin-bottom: 33px;
-      color: black;
-      font-family: PT Sans;
-      font-weight: 700;
-      font-size: 15px;
-      background-color: white;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 11px 22px;
+        margin-bottom: 33px;
+        color: black;
+        font-family: PT Sans;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: white;
+      }
     }
     button + div {
       display: flex;
@@ -104,10 +108,9 @@
     top: 231px;
   }
 }
-@media all and (max-width: 768px) { 
+@media all and (max-width: 768px) {
   .btnContacts {
     position: static;
-   
   }
   .btnContacts + div {
     position: static;
@@ -126,11 +129,10 @@
       margin-bottom: 23px;
     }
   }
-  .btnContacts +div {
+  .btnContacts + div {
     display: none;
   }
   .btnContacts {
     margin: 0 auto;
   }
 }
-

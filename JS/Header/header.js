@@ -20,12 +20,6 @@ export function headerBurger() {
   }
 }
 
-const searchItems = [
-  { name: "Гусеничный кран Liebherr LR 1750", link: "#" },
-  { name: "Гусеничный кран Liebherr LR 1760", link: "#" },
-  { name: "Гусеничный кран Liebherr LR 1770", link: "#" },
-];
-
 // Функция поиска в Headere
 export function headerSearch() {
   try {
@@ -36,7 +30,7 @@ export function headerSearch() {
       throw new Error("Элементы поиска не найдены");
     }
 
-    search.addEventListener("input", function () {
+    search.addEventListener("input", async function () {
       const searchQuery = this.value.toLowerCase().trim();
       searchResultsContainer.innerHTML = "";
 
@@ -45,27 +39,40 @@ export function headerSearch() {
         return;
       }
 
-      const matchedItems = searchItems.filter((item) => item.name.toLowerCase().includes(searchQuery));
+      try {
+        const response = await fetch(`http://localhost:4000/products?q=${searchQuery}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
 
-      if (matchedItems.length > 0) {
-        matchedItems.forEach((item) => {
-          const resultItem = document.createElement("a");
-          resultItem.href = item.link;
-          resultItem.classList.add("search-result-item");
-          resultItem.textContent = item.name;
+        if (data.length > 0) {
+          data.forEach((item) => {
+            const resultItem = document.createElement("button");
+            resultItem.setAttribute("data-product-id", item.id);
+            resultItem.classList.add("search-result-item");
+            resultItem.textContent = `${item.title} (${item.tons} тонн)`;
 
-          resultItem.addEventListener("click", function (e) {
-            search.value = "";
-            searchResultsContainer.style.display = "none";
+            resultItem.addEventListener("click", function (e) {
+              window.location.href = `ProductCard.html?${item.id}`;
+              search.value = "";
+              searchResultsContainer.style.display = "none";
+            });
+
+            searchResultsContainer.appendChild(resultItem);
           });
-
-          searchResultsContainer.appendChild(resultItem);
-        });
-        searchResultsContainer.style.display = "block";
-      } else {
-        const noResults = document.createElement("div");
-        noResults.textContent = "Ничего не найдено";
-        searchResultsContainer.appendChild(noResults);
+          searchResultsContainer.style.display = "block";
+        } else {
+          const noResults = document.createElement("div");
+          noResults.textContent = "Ничего не найдено";
+          searchResultsContainer.appendChild(noResults);
+          searchResultsContainer.style.display = "block";
+        }
+      } catch (error) {
+        console.error("Ошибка при поиске:", error);
+        const errorMessage = document.createElement("div");
+        errorMessage.textContent = "Ошибка при поиске";
+        searchResultsContainer.appendChild(errorMessage);
         searchResultsContainer.style.display = "block";
       }
     });

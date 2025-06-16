@@ -25,3 +25,7 @@
     }
   }
 }
+#burger+ul>li:nth-of-type(3)>a {  //стили для подчёркивания в Headere
+  font-weight: 600;
+  border-bottom: 2px solid #FCB427;
+}

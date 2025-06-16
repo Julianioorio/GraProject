@@ -40,7 +40,7 @@
                     ул. Куликовская, 12
                   </address>
                 </div>
-                <div><button class="connectionBtn header-button">Свяжитесь со мной</button></div>
+                <div><button class="header-button"><a href="Contact.html">Свяжитесь со мной</a></button></div>
                 <div>
                   <img src="img/phoneCall.svg" alt="phoneCall" />
                   <div>
@@ -245,17 +245,24 @@
         <section class="formOrder">
           <div class="container">
             <h2>Нужна помощь в подборе?</h2>
-            <form action="">
-              <div class="from"><input type="text" placeholder="Ваше имя" /><input type="tel" placeholder="Ваш телефон" /><button class="connectionBtn">Заказать звонок</button></div>
+            <form action="http://localhost:4000/submit"  method="post">
+              <div class="from">
+                <input type="text" name="name" placeholder="Ваше имя" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" /><input
+                  type="tel"
+                  pattern="^\+[0-9\s\-().]{7,20}$"
+                  name="tel"
+                  placeholder="Ваш телефон"
+                /><button class="connectionBtn">Заказать звонок</button>
+              </div>
             </form>
           </div>
         </section>
       </main>
-       <footer class="footer">
+      <footer class="footer">
         <div class="container">
           <div class="footerMaster">
             <div class="logofooter">
-              <img src="img/Logo.svg" alt="logo" />
+              <a href="index.html"><img src="img/Logo.svg" alt="logo" /></a>
               <p>
                 Аренда мобильных и<br />
                 гусеничных кранов LIEBHERR
@@ -294,7 +301,7 @@
               </ul>
             </nav>
             <div class="btnContacts">
-              <button class="connectionBtn">Свяжитесь со мной</button>
+              <button><a href="Contact.html">Свяжитесь со мной</a></button>
               <div>
                 <a href=""><img src="img/insta.svg" alt="insta" /></a><a href="#"><img src="img/twiter.svg" alt="twiter" /></a><a href="#"><img src="img/viber.svg" alt="viber" /></a
                 ><a href="#"><img src="img/vkontacte.svg" alt="vkontacte" /></a><a href="#"><img src="img/Yandex.svg" alt="Yandex" /></a>
