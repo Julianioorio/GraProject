@@ -1,29 +1,40 @@
-//list ориентация 
+//list ориентация
 document.getElementById("list").addEventListener("click", function () {
   const productCard = document.getElementById("productCard");
   if (productCard.style.flexDirection === "column") return;
 
   productCard.style.flexDirection = "column";
-  const tons = document.querySelectorAll(".product-card div:last-child p:first-child");
+  productCard.style.flexWrap = "nowrap";
 
+  const existingCards = productCard.querySelectorAll("div");
   productCard.innerHTML = "";
 
-  tons.forEach((ton) => {
-    const div = document.createElement("div");
-    div.style.textAlign = "center";
+  existingCards.forEach((card) => {
+    const button = card.querySelector("button");
+    const productId = button?.getAttribute("data-product-id");
+    const title = card.querySelector("h3")?.textContent;
+    const tons = card.querySelector("p")?.textContent;
 
-    const aLink = document.createElement("a");
-    aLink.href = "#";
-    aLink.style.textDecoration = "none";
-    aLink.style.color = "black";
+    if (title && tons) {
+      const div = document.createElement("div");
+      div.style.textAlign = "center";
 
-    const title = document.createElement("h3");
-    title.textContent = "Гусеничный кран Liebherr LR 1750";
-    title.style.textAlign = "center";
-    aLink.appendChild(title);
+      const button = document.createElement("button");
+      button.setAttribute("data-product-id", productId);
+      button.style.textDecoration = "none";
+      button.style.color = "black";
 
-    div.appendChild(aLink);
-    div.appendChild(ton);
-    productCard.appendChild(div);
+      const titleEl = document.createElement("h3");
+      titleEl.textContent = title;
+      titleEl.style.textAlign = "center";
+      button.appendChild(titleEl);
+
+      const tonsEl = document.createElement("p");
+      tonsEl.textContent = tons;
+
+      div.appendChild(button);
+      div.appendChild(tonsEl);
+      productCard.appendChild(div);
+    }
   });
 });

@@ -30,20 +30,20 @@ document.querySelector(".show").addEventListener("click", function () {
           const div = document.createElement("div");
           div.style.textAlign = "center";
 
-          const aLink = document.createElement("a");
-          aLink.href = "#";
-          aLink.style.textDecoration = "none";
-          aLink.style.color = "black";
+          const button = document.createElement("button");
+          button.setAttribute("data-product-id", element.id);
+          button.style.textDecoration = "none";
+          button.style.color = "black";
 
           const title = document.createElement("h3");
           title.textContent = element.title;
           title.style.textAlign = "center";
-          aLink.appendChild(title);
+          button.appendChild(title);
 
           const tons = document.createElement("p");
           tons.textContent = `${element.tons} тонн`;
 
-          div.appendChild(aLink);
+          div.appendChild(button);
           div.appendChild(tons);
           productCard.appendChild(div);
         });
