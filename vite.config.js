@@ -8,7 +8,11 @@ export default defineConfig({
     port: 3000,
     hot: true,
     proxy: {
-      '^/submit': 'http://localhost:4000'
+      '/submit': {
+        target: 'http://localhost:4000',
+        changeOrigin: true,
+        secure: false
+      }
     }
   },
   build: {

@@ -1,31 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Находим все формы с кнопкой connectionBtn
   const forms = document.querySelectorAll("form");
 
   forms.forEach((form) => {
     const submitButton = form.querySelector(".connectionBtn");
     if (submitButton) {
       form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Предотвращаем стандартную отправку формы
+        e.preventDefault();
 
-        // Показываем модальное окно
         const modal = document.querySelector(".modal");
         if (modal) {
           modal.style.display = "block";
         }
 
-        // Получаем данные формы
         const formData = new FormData(form);
 
-        // Отправляем данные на сервер
-        fetch(form.action, {
-          method: form.method,
-          body: formData,
+        const data = {};
+        formData.forEach((value, key) => {
+          data[key] = value;
+        });
+
+        fetch("http://localhost:4000/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         })
           .then((response) => {
             if (!response.ok) {
-              throw new Error("Ошибка при отправке формы");
+              return response.json().then((err) => {
+                throw new Error(err.details || err.error || "Ошибка при отправке формы");
+              });
             }
+            return response.json();
+          })
+          .then((data) => {
+            if (modal) {
+              modal.style.display = "none";
+            }
+            
+            form.reset();
           })
           .catch((error) => {
             console.error("Ошибка при отправке формы:", error);
@@ -34,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Обработчики закрытия модального окна
   const closeButtons = document.querySelectorAll(".close, #closeModal");
   closeButtons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -45,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Закрытие модального окна при клике вне его области
   window.addEventListener("click", function (e) {
     const modal = document.querySelector(".modal");
     if (e.target === modal) {
