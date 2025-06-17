@@ -9,12 +9,16 @@
     margin-bottom: 65px;
   }
   button {
-    color: white;
-    font-family: PT Sans;
-    font-weight: 700;
-    background-color: #fcb427;
-    padding: 12px 46px;
-    font-size: 18px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-family: PT Sans;
+      font-weight: 700;
+      background-color: #fcb427;
+      padding: 12px 46px;
+      font-size: 18px;
+    }
   }
   .usReliable-title {
     font-family: Montserrat;
@@ -100,7 +104,7 @@
   }
   .usReliable {
     .usReliable-image {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 }
