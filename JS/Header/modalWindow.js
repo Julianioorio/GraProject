@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const formData = new FormData(form);
-
         const data = {};
         formData.forEach((value, key) => {
           data[key] = value;
@@ -35,33 +34,38 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
           })
           .then((data) => {
-            if (modal) {
-              modal.style.display = "none";
-            }
-            
+            // Показываем сообщение об успехе
+            const successMessage = document.createElement("div");
+            successMessage.className = "success-message";
+            successMessage.textContent = "Форма успешно отправлена!";
+            modal.appendChild(successMessage);
+
+            // Очищаем форму
             form.reset();
+            // Не закрываем модальное окно автоматически
           })
           .catch((error) => {
-            console.error("Ошибка при отправке формы:", error);
+            // Показываем сообщение об ошибке
+            const errorMessage = document.createElement("div");
+            errorMessage.className = "error-message";
+            errorMessage.textContent = "Произошла ошибка при отправке формы";
+            modal.appendChild(errorMessage);
           });
       });
     }
   });
 
+  // Обработчик для кнопки закрытия
   const closeButtons = document.querySelectorAll(".close, #closeModal");
   closeButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const modal = document.querySelector(".modal");
       if (modal) {
         modal.style.display = "none";
+        // Удаляем все сообщения при закрытии
+        const messages = modal.querySelectorAll(".success-message, .error-message");
+        messages.forEach((message) => message.remove());
       }
     });
-  });
-
-  window.addEventListener("click", function (e) {
-    const modal = document.querySelector(".modal");
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
   });
 });
