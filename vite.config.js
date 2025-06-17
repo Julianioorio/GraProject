@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     port: 3000,
     hot: true,
+    proxy: {
+      '^/submit': 'http://localhost:4000'
+    }
   },
   build: {
     outDir: "docs",
