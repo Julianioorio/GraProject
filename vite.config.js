@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import string from "vite-plugin-string";
 
 export default defineConfig({
   root: "./",
@@ -8,12 +9,12 @@ export default defineConfig({
     port: 3000,
     hot: true,
     proxy: {
-      '/submit': {
-        target: 'http://localhost:4000',
+      "/submit": {
+        target: "http://localhost:4000",
         changeOrigin: true,
-        secure: false
-      }
-    }
+        secure: false,
+      },
+    },
   },
   build: {
     outDir: "docs",
@@ -29,7 +30,7 @@ export default defineConfig({
         Contact: resolve(__dirname, "Contact.html"),
         ObjectPages: resolve(__dirname, "ObjectPages.html"),
         ProducrCard: resolve(__dirname, "ProductCard.html"),
-        BlogPages: resolve(__dirname, 'BlogPages.html'),
+        BlogPages: resolve(__dirname, "BlogPages.html"),
       },
       output: {
         assetFileNames: "assets/[name][extname]",
@@ -44,4 +45,9 @@ export default defineConfig({
       "@": resolve(__dirname, "./"),
     },
   },
+  plugins: [
+    string({
+      include: 'templates/**/*.html',
+    }),
+  ],
 });
