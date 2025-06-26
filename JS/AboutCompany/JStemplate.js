@@ -1,2 +1,4 @@
-import  * as aboutCompanyInfo from '../../templates/aboutCompanyInfo.html';
-document.querySelector('.infoUsMain').innerHTML = aboutCompanyInfo.default
+import * as aboutCompanyInfo from '../../templates/aboutCompanyInfo.html';
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.infoUsMain').innerHTML = aboutCompanyInfo.default;
+});

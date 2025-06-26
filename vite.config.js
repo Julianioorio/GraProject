@@ -47,7 +47,7 @@ export default defineConfig({
   },
   plugins: [
     string({
-      include: 'templates/**/*.html',
+      include: ['templates/**/*.html'],
     }),
   ],
 });
