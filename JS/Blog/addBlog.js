@@ -1,6 +1,6 @@
 document.querySelector(".Download").addEventListener("click", function () {
   const mainObject = document.querySelector(".Blog");
-  const div = document.createElement("div"); 
+  const div = document.createElement("div");
   const div2 = document.createElement("div");
   const div3 = document.createElement("div");
   div.innerHTML = `<div><img src="img/BlogShow.jpg" alt="imgBlog" /></div>

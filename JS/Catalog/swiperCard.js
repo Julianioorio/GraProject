@@ -80,7 +80,6 @@ function showPage(pageNumber) {
   });
 }
 
-
 const observer = new MutationObserver(updatePagination);
 const productCard = document.getElementById("productCard");
 
