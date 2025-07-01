@@ -40,7 +40,9 @@
                     ул. Куликовская, 12
                   </address>
                 </div>
-                <div><button class="header-button"><a href="Contact.html">Свяжитесь со мной</a></button></div>
+                <div>
+                  <button class="header-button"><a href="Contact.html">Свяжитесь со мной</a></button>
+                </div>
                 <div>
                   <img src="img/phoneCall.svg" alt="phoneCall" />
                   <div>
@@ -212,8 +214,15 @@
         <section class="formOrder">
           <div class="container">
             <h2>Нужна помощь в подборе?</h2>
-            <form action="/submit"  method="post">
-              <div class="from"><input type="text" name="name" placeholder="Ваше имя" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" /><input type="tel" name="tel" placeholder="Ваш телефон" pattern="^\+[0-9\s\-().]{7,20}$" /><button class="connectionBtn">Заказать звонок</button></div>
+            <form action="/submit" method="post">
+              <div class="from">
+                <input type="text" name="name" placeholder="Ваше имя" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" /><input
+                  type="tel"
+                  name="tel"
+                  placeholder="Ваш телефон"
+                  pattern="^\+[0-9\s\-().]{7,20}$"
+                /><button class="connectionBtn">Заказать звонок</button>
+              </div>
             </form>
           </div>
         </section>
@@ -297,11 +306,18 @@
                 </div>
               </div>
               <div class="formSend">
-                <form action="/submit"  method="post">
-                  <input type="text" placeholder="имя" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$"  name="name"/>
-                  <div><input type="text" placeholder="E-mail" name="E-mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"/><input type="text" name="tel" placeholder="Телефон" pattern="^\+[0-9\s\-().]{7,20}$"/></div>
+                <form action="/submit" method="post">
+                  <input type="text" placeholder="имя" pattern="^([A-Za-zА-Яа-яЁё]+)\s([A-Za-zА-Яа-яЁё]+)$" name="name" />
+                  <div>
+                    <input type="text" placeholder="E-mail" name="E-mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" /><input
+                      type="text"
+                      name="tel"
+                      placeholder="Телефон"
+                      pattern="^\+[0-9\s\-().]{7,20}$"
+                    />
+                  </div>
                   <textarea name="message" placeholder="Сообщение" pattern="^[a-zA-Zа-яА-ЯёЁ\s]{1,30}$"></textarea>
-                  <input type="checkbox" name="Agree"/><span>Я согласен с условиями обработки и использования моих персональных данных</span>
+                  <input type="checkbox" name="Agree" /><span>Я согласен с условиями обработки и использования моих персональных данных</span>
                   <button class="connectionBtn">Оставить заявку</button>
                 </form>
               </div>
